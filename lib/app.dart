@@ -1,3 +1,4 @@
+import 'package:airfly/dashboard_view.dart';
 import 'package:airfly/login_view.dart';
 import 'package:airfly/sigup_view.dart';
 import 'package:airfly/welcome_view.dart';
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
         '/loginRoute': (context) => const loginView(),
         '/signupRoute': (context) => const SignupView(),
         '/welcomeRoute': (context) => const WelcomeView(),
+        '/dashboardRoute': (context) => const DashboardView(),
       },
     );
   }
