@@ -1,4 +1,5 @@
 import 'package:airfly/login_view.dart';
+import 'package:airfly/sigup_view.dart';
 import 'package:airfly/welcome_view.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +10,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/welcomeRoute',
+      initialRoute: '/WelcomeView',
       routes: {
         '/loginRoute': (context) => const loginView(),
+        '/signupRoute': (context) => const SignupView(),
         '/welcomeRoute': (context) => const WelcomeView(),
       },
     );

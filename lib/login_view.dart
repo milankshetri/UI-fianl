@@ -12,51 +12,51 @@ class _loginViewState extends State<loginView> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-          gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-        Colors.orange[900]!,
-        Colors.orange[800]!,
-        Colors.orange[400]!,
-      ])),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
           Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Login",
-                  style: TextStyle(color: Colors.white, fontSize: 40),
+                  style: TextStyle(color: Colors.black, fontSize: 40),
                 ),
                 Column(
                   children: <Widget>[
                     Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 5, vertical: 16),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 5, vertical: 16),
                       child: Column(children: [
-                        TextField(
+                        const TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(),
                             border: OutlineInputBorder(),
                             hintText: 'Enter your username',
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        TextField(
+                        const TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(),
                             border: OutlineInputBorder(),
                             hintText: 'Enter your username',
                           ),
                         ),
+                        ElevatedButton(
+                            onPressed: () {}, child: const Text("Login")),
+                        ElevatedButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/signupRoute');
+                            },
+                            child: const Text("Sign Up")),
                       ]),
                     ),
                   ],

@@ -24,7 +24,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Text("Login",
+                    const Text("Welcome",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 30)),
                     const SizedBox(
@@ -38,21 +38,11 @@ class _WelcomeViewState extends State<WelcomeView> {
                     const SizedBox(
                       height: 20,
                     ),
-                    const TextField(
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          hintText: 'Enter your username'),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    const TextField(
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          hintText: 'Enter your username'),
-                    ),
                     ElevatedButton(
-                        onPressed: () {}, child: const Text("Login")),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/loginRoute');
+                        },
+                        child: const Text("Login")),
                     ElevatedButton(
                         onPressed: () {}, child: const Text("Sign Up")),
                   ],
