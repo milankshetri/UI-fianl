@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class loginView extends StatefulWidget {
-  const loginView({super.key});
+class SignupView extends StatefulWidget {
+  const SignupView({super.key});
 
   @override
-  State<loginView> createState() => _loginViewState();
+  State<SignupView> createState() => _SignupViewState();
 }
 
-class _loginViewState extends State<loginView> {
+class _SignupViewState extends State<SignupView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class _loginViewState extends State<loginView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Login",
+                  "Sign Up",
                   style: TextStyle(color: Colors.white, fontSize: 40),
                 ),
                 Column(
@@ -44,7 +44,7 @@ class _loginViewState extends State<loginView> {
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(),
                             border: OutlineInputBorder(),
-                            hintText: 'Enter your username',
+                            hintText: 'Enter your first Name',
                           ),
                         ),
                         SizedBox(
@@ -54,7 +54,7 @@ class _loginViewState extends State<loginView> {
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(),
                             border: OutlineInputBorder(),
-                            hintText: 'Enter your username',
+                            hintText: 'Enter your last Name',
                           ),
                         ),
                       ]),
