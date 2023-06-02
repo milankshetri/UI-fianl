@@ -37,7 +37,9 @@ class _LoginViewState extends State<LoginView> {
               height: 50,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/dashboardRoute');
+                },
                 child: const Text(
                   "Login",
                   style: TextStyle(fontSize: 20),

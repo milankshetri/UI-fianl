@@ -1,8 +1,7 @@
+import 'package:airfly/view/aboutus_view.dart';
 import 'package:airfly/view/bookflights_view.dart';
-import 'package:airfly/view/checkin_view.dart';
 import 'package:airfly/view/home_view.dart';
-import 'package:airfly/view/more_view.dart';
-import 'package:airfly/view/mytrips_view.dart';
+import 'package:airfly/view/profile_view.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatefulWidget {
@@ -18,9 +17,8 @@ class _DashboardViewState extends State<DashboardView> {
   List<Widget> lstBottomScreen = [
     const HomeView(),
     const BookflightView(),
-    const MytripsView(),
-    const CheckinView(),
-    const MoreView(),
+    const AboutusView(),
+    const ProfileView(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -47,7 +45,7 @@ class _DashboardViewState extends State<DashboardView> {
               label: "Profile",
             ),
           ],
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.redAccent,
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.black,
           currentIndex: _selectedIndex,
