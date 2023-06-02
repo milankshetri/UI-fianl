@@ -1,4 +1,4 @@
-import 'package:airfly/dashboard_view.dart';
+import 'package:airfly/view/dashboard.dart';
 import 'package:airfly/view/login_view.dart';
 import 'package:airfly/view/sigup_view.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/loginRoute',
+      initialRoute: '/dashboardRoute',
       routes: {
         '/loginRoute': (context) => const LoginView(),
         '/signupRoute': (context) => const SignupView(),
