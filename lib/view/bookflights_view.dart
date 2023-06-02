@@ -10,6 +10,10 @@ class BookflightView extends StatefulWidget {
 class _BookflightViewState extends State<BookflightView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Book Flights"),
+      ),
+    );
   }
 }
