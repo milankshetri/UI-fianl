@@ -171,13 +171,13 @@ class _RegisterState extends ConsumerState<Register> {
     );
   }
 
-  @override
-  void dispose() {
-    fnamecontroller.dispose();
-    lnamecontroller.dispose();
-    passwordcontroller.dispose();
-    ussernamecontroller.dispose();
-    passwordcontroller.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   fnamecontroller.dispose();
+  //   lnamecontroller.dispose();
+  //   passwordcontroller.dispose();
+  //   ussernamecontroller.dispose();
+  //   passwordcontroller.dispose();
+  //   super.dispose();
+  // }
 }
