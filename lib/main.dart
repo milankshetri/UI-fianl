@@ -1,25 +1,14 @@
-import 'package:airfly/routes/app_route.dart';
-import 'package:airfly/themes/app_theme.dart';
+import 'package:airfly/core/app.dart';
+import 'package:airfly/core/network/local/hive_service.dart';
 import 'package:flutter/material.dart';
-
-import 'view/app.dart';
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Bottom Navigation',
-        initialRoute: AppRoute.loginRoute,
-        theme: AppTheme.getApplicationTheme(),
-        routes: AppRoute.getAppRoutes());
-  }
-}
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  HiveService().init();
   runApp(
-    const App(),
+    const ProviderScope(
+      child: App(),
+    ),
   );
 }
