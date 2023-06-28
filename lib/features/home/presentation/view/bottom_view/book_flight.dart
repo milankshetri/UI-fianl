@@ -12,7 +12,7 @@ class _BookViewState extends State<BookView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Book Flight'),
+        title: const Text('Book Appointment'),
       ),
       body: const Center(
         child: Text('Bookings'),

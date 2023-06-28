@@ -28,7 +28,7 @@ class _SplashViewState extends ConsumerState<SplashView> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Airline Ticket Booking',
+                  'Doctor Appointment System',
                   style: TextStyle(
                     fontSize: 25,
                   ),
@@ -44,7 +44,7 @@ class _SplashViewState extends ConsumerState<SplashView> {
             bottom: 10,
             left: MediaQuery.of(context).size.width / 4,
             child: const Text(
-              'Developed by: Satish Pradhan',
+              'Developed by: Milan Kshetri',
               style: TextStyle(fontSize: 15),
             ),
           ),

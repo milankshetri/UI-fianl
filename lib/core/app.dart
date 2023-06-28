@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Air Flight Booking App',
+      title: 'Doctor Appointment System',
       initialRoute: AppRoute.splashRoute,
       routes: AppRoute.getApplicationRoute(),
     );

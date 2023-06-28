@@ -32,7 +32,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.airplanemode_active),
-            label: "Book Flights",
+            label: "Book Appointment",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),

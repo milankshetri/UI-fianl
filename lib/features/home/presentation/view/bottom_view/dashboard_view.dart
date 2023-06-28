@@ -22,7 +22,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Flights',
+                'Book Your',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'BOOKINGS',
+                'Doctor',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
